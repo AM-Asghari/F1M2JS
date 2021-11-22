@@ -9,10 +9,20 @@
 </head>
 <body>
     <h1 id="header">museum online javascript</h1>
-   
+    <p id="mkBlauw">maak achtergrond blauw</p>
     <script>
         const header = document.getElementById("header");
         header.style.backgroundColor = "red"
+        
+        const mkBlauw = document.getElementById("mkBlauw");
+        mkBlauw.addEventListener('click',voeruitBlauw);
+
+        function voeruitBlauw(){
+            document.body.style.backgroundColor = "blue";
+            document.body.style.color = "white";
+            header.style.backgroundColor = "white";
+            header.style.color = "black";
+        }
 
 
     </script>
