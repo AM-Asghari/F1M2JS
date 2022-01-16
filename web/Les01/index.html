@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,17 +8,18 @@
     <title>F1M2JS</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <h1 id="header">museum online javascript</h1>
     <p id="mkBlauw">maak achtergrond blauw</p>
     <script>
         const header = document.getElementById("header");
         header.style.backgroundColor = "red"
-        
-        const mkBlauw = document.getElementById("mkBlauw");
-        mkBlauw.addEventListener('click',voeruitBlauw);
 
-        function voeruitBlauw(){
+        const mkBlauw = document.getElementById("mkBlauw");
+        mkBlauw.addEventListener('click', voeruitBlauw);
+
+        function voeruitBlauw() {
             document.body.style.backgroundColor = "blue";
             document.body.style.color = "white";
             header.style.backgroundColor = "white";
@@ -28,4 +30,5 @@
     </script>
 
 </body>
+
 </html>
